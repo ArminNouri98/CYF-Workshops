@@ -3,3 +3,6 @@
 
 const currentYear = 2023;
 currentYear();
+
+
+// there is not function currentYear it won't work and display anything.
