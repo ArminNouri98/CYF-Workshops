@@ -9,7 +9,13 @@ function increment(node) {
 
 export function App() {
   const body = document.createElement("body");
-  header();
-  main();
+  header(body);
+  main(body);
+
+  const button = body.querySelector("#increment");
+  const counter = body.querySelector("#counter");
+  button.addEventListener("click", () => {
+    increment(counter);
+  });
   return body;
 }
